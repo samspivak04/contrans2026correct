@@ -2,7 +2,7 @@
 
 > Replace this whole file as you go. The headings are the ones I'll look for when grading, and they're roughly the ones *Data in Brief* asks for, so filling them in during the semester means your final report is half-written by December.
 
-One or two sentences: what data this pipeline collects, and what the dashboard lets someone see.
+One or two sentences: *I had to make a new repo because the old one broke (hence this one being the "correct" repo)... I accidentally created a venv while having problems with my kernel and git did not like that... not really sure how to fix it so I just started over.* 
 
 **Live dashboard:** [your Render URL]
 
