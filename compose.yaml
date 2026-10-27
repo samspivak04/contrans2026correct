@@ -1,12 +1,4 @@
 services:
-  app:
-    image: jkropko/contrans_image  
-    ports:
-      - "8050:8050"
-    volumes:
-      - .:/contrans2026
-    networks:
-      - dbnetwork
 
   postgres:
     image: postgres:18.6
@@ -24,21 +16,9 @@ services:
 #BUT - you will never type in that path, because Docker uses an alias instead.
 #You can store data and files here, so that they are not destroyed when the container closes.
 
-  neo4j:
-    image: neo4j:2026.07.1-community-trixie
-    ports:
-      - "7474:7474"
-      - "7687:7687"
-    volumes:
-      - neo4jdata:/data
-    env_file:
-      - .env
-    networks:
-      - dbnetwork
 
 volumes:
   postgresdata:
-  neo4jdata:
 
 networks:
   dbnetwork:
