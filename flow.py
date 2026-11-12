@@ -47,7 +47,7 @@ create_new_db = task(ct.create_new_db, name='create_new_db')
 
 # - uploaded our transformed data to the contrans DB
 
-data_to_postgres = task(ct.to_postgres, name='data_to_postgres')
+data_to_postgres = task(ct.data_to_postgres, name='data_to_postgres')
 
 # - deployed to Neon
 
@@ -92,7 +92,7 @@ def contrans_pipeline():
     processed_others = make_others.submit(wait_for=[committees, committee_membership,vote_similarity])
 
     docker = docker_launch.submit()
-        #processed_members = make_members.submit()
+    #processed_members = make_members.submit()
     #processed_crosswalk = make_crosswalk.submit()
     #processed_terms = make_terms.submit()
     #processed_bills = make_bills.submit()
