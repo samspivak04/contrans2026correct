@@ -915,7 +915,7 @@ class contrans:
         dotenv.load_dotenv()
         self.POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD')
         self.congresskey = os.getenv('congresskey')
-        self.feckey = os.getenv('FEC_API_KEY')
+        self.feckey = os.getenv('FECKEY')
         self.botname = 'contrans'
         self.version = '0.0'
         self.github = 'https://github.com/jkropko/contrans2026'
